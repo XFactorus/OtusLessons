@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainTabView: View {
     
     @State private var selection = 0
     
@@ -19,18 +19,17 @@ struct ContentView: View {
                 .font(.title)
                 .tabItem {
                     VStack {
-                        Image(systemName: "globe")
+                        Image(systemName: "ant")
                         Text("First")
                     }
             }
                 
             .tag(0)
             
-            SecondScreen(selection: $selection)
-                .font(.title)
+            SecondScreen()
                 .tabItem {
                     VStack {
-                        Image(systemName: "moon")
+                        Image(systemName: "hare")
                         Text("Second")
                     }
             }
@@ -39,7 +38,7 @@ struct ContentView: View {
                 .font(.title)
                 .tabItem {
                     VStack {
-                        Image(systemName: "globe")
+                        Image(systemName: "tortoise")
                         Text("Third")
                     }
             }
@@ -48,8 +47,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MainTabViewPreviews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainTabView()
     }
 }
