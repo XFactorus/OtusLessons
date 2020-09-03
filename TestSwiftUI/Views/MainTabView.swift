@@ -34,8 +34,8 @@ struct MainTabView: View {
                     }
             }
             .tag(1)
-            Text("Third View")
-                .font(.title)
+            
+            ThirdScreen()
                 .tabItem {
                     VStack {
                         Image(systemName: "tortoise")
