@@ -39,6 +39,9 @@ struct SecondScreen: View {
             } else {
                 self.openSymbolSelectionState = false
             }
+        }.onDisappear() {
+            self.openSymbolSelectionState = false
+
         }
     }
 }
