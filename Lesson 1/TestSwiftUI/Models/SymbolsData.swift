@@ -21,10 +21,11 @@ final class SymbolsData: ObservableObject {
                                       SymbolModel(symbolDescription: "Bed", symbolName: "bed.double")]
     
     var selectedSymbol: SymbolModel = SymbolModel(symbolDescription: "Phone device", symbolName: "phone")
+    
     @Published var randomSymbolSelected: Bool = false
     
     func selectRandomSymbol() {
-        self.selectedSymbol = symbolsList.randomElement() ?? symbolsList[0]
+        self.selectedSymbol = symbolsList.randomElement() ?? selectedSymbol
         self.randomSymbolSelected = true
     }
 }
