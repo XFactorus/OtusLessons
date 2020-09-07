@@ -10,13 +10,11 @@ import SwiftUI
 
 struct MainTabView: View {
     
-    @State private var selection = 0
-    
+    @State private var tabSelection = 0
     
     var body: some View {
-        TabView(selection: $selection) {
-            Text("First View")
-                .font(.title)
+        TabView(selection: $tabSelection) {
+            FirstScreen(tabSelection: $tabSelection)
                 .tabItem {
                     VStack {
                         Image(systemName: "ant")
@@ -49,6 +47,14 @@ struct MainTabView: View {
 
 struct MainTabViewPreviews: PreviewProvider {
     static var previews: some View {
-        MainTabView()
+        Group {
+            MainTabView().environmentObject(SymbolsData())
+                .previewDevice(PreviewDevice(rawValue: "iPad SE"))
+                .previewDisplayName("iPhone SE")
+            
+            MainTabView().environmentObject(SymbolsData())
+                .previewDevice(PreviewDevice(rawValue: "iPad Air 2"))
+                .previewDisplayName("iPad Air 2")
+        }
     }
 }

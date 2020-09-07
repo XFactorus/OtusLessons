@@ -25,6 +25,6 @@ struct SymbolDetail: View {
 
 struct SymbolDetail_Previews: PreviewProvider {
     static var previews: some View {
-        SymbolDetail(symbol: symbolsData[4])
+        SymbolDetail(symbol: SymbolsData().symbolsList[4])
     }
 }

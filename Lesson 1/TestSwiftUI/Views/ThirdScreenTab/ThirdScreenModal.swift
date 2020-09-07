@@ -9,8 +9,16 @@
 import SwiftUI
 
 struct ThirdScreenModal: View {
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         VStack {
+            Button(action: {
+                self.presentationMode.wrappedValue.dismiss()
+            }) {
+                Text("Close screen")
+            }
+            Spacer()
             Text("Good work!")
                 .font(.system(size:60))
             Image(systemName: "hand.thumbsup")

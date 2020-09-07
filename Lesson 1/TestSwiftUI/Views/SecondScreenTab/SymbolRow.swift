@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct SymbolRow: View {
+    
     var selectedSymbol: SymbolModel
     
     var body: some View {
@@ -23,6 +24,6 @@ struct SymbolRow: View {
 
 struct SymbolRow_Previews: PreviewProvider {
     static var previews: some View {
-        SymbolRow(selectedSymbol: symbolsData[0])
+        SymbolRow(selectedSymbol: SymbolsData().symbolsList[0])
     }
 }

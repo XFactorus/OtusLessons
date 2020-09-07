@@ -14,6 +14,7 @@
 		5E87CBC3250145EC008FD70D /* SymbolDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E87CBC2250145EC008FD70D /* SymbolDetail.swift */; };
 		5E87CBC825014C41008FD70D /* ThirdScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E87CBC725014C41008FD70D /* ThirdScreen.swift */; };
 		5E87CBCA25014DDD008FD70D /* ThirdScreenModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E87CBC925014DDD008FD70D /* ThirdScreenModal.swift */; };
+		5E87CBCD250153D3008FD70D /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E87CBCC250153D3008FD70D /* FirstScreen.swift */; };
 		5E8F1CFA24FEAEAC00381BAC /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8F1CF924FEAEAC00381BAC /* SecondScreen.swift */; };
 		5EA746E724F8290C00CCEA9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA746E624F8290C00CCEA9B /* AppDelegate.swift */; };
 		5EA746E924F8290C00CCEA9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA746E824F8290C00CCEA9B /* SceneDelegate.swift */; };
@@ -31,6 +32,7 @@
 		5E87CBC2250145EC008FD70D /* SymbolDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolDetail.swift; sourceTree = "<group>"; };
 		5E87CBC725014C41008FD70D /* ThirdScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreen.swift; sourceTree = "<group>"; };
 		5E87CBC925014DDD008FD70D /* ThirdScreenModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreenModal.swift; sourceTree = "<group>"; };
+		5E87CBCC250153D3008FD70D /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
 		5E8F1CF924FEAEAC00381BAC /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
 		5EA746E324F8290C00CCEA9B /* TestSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EA746E624F8290C00CCEA9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 		5E87CBCB2501532C008FD70D /* FirstScreenTab */ = {
 			isa = PBXGroup;
 			children = (
+				5E87CBCC250153D3008FD70D /* FirstScreen.swift */,
 			);
 			path = FirstScreenTab;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				5E8F1CFA24FEAEAC00381BAC /* SecondScreen.swift in Sources */,
 				5EA746E924F8290C00CCEA9B /* SceneDelegate.swift in Sources */,
 				5EA746EB24F8290C00CCEA9B /* MainTabView.swift in Sources */,
+				5E87CBCD250153D3008FD70D /* FirstScreen.swift in Sources */,
 				5E87CBC825014C41008FD70D /* ThirdScreen.swift in Sources */,
 				5E28007825013DAD00E49D38 /* SymbolModel.swift in Sources */,
 				5E28007125013A4C00E49D38 /* SecondScreenViewModel.swift in Sources */,
