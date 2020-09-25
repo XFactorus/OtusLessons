@@ -34,6 +34,8 @@ struct RMCharacterImageView: View {
 
 struct RMCharacterImage_Previews: PreviewProvider {
     static var previews: some View {
-        RMCharacterImageView(withURL: "https://rickandmortyapi.com/api/character/avatar/1.jpeg")
+        NavControllerView(transition: .custom(.slide))  {
+            RMCharacterImageView(withURL: "https://rickandmortyapi.com/api/character/avatar/1.jpeg")
+        }
     }
 }

@@ -291,6 +291,8 @@ struct FakeNavBar: View {
 
 struct FakeNavBar_Previews: PreviewProvider {
     static var previews: some View {
-        FakeNavBar(label: "Characters list")
+        NavControllerView(transition: .custom(.slide))  {
+            FakeNavBar(label: "Characters list")
+        }
     }
 }

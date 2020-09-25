@@ -46,6 +46,8 @@ struct RMPropertyView: View {
 
 struct RMCharacterDetailsView_Previews: PreviewProvider {
     static var previews: some View {
+        NavControllerView(transition: .custom(.slide))  {
         RMCharacterDetailsView(character: RMCharacter.getMockCharacter())
+        }
     }
 }
