@@ -13,9 +13,7 @@ struct RMCharactersListView: View {
     
     var body: some View {
         List(self.viewModel.listDataSource) { character in
-            RMCharacterCell(title: character.name,
-                            status: character.status ?? "",
-                            gender: character.gender ?? "")
+            RMCharacterCell(character: character)
                 .onAppear() {
                     if self.viewModel.listDataSource.isLast(character) {
                         self.viewModel.fetchPage()
@@ -28,18 +26,18 @@ struct RMCharactersListView: View {
     
 struct RMCharacterCell: View {
     
-    @State var title: String
-    @State var status: String
-    @State var gender: String
+    @State var character: RMCharacter
+    
+    @EnvironmentObject private var viewModel: NavControllerViewModel
     
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
-                Text(title)
+                Text(character.name)
                     .font(.headline)
                     .lineLimit(2)
                     .multilineTextAlignment(.leading)
-                Text(gender)
+                Text(character.gender ?? "Undefined")
                     .font(.callout)
                 Spacer()
             }
@@ -47,12 +45,17 @@ struct RMCharacterCell: View {
             
             Spacer()
             
-            Text(status.capitalized)
+            Text(character.status?.capitalized ?? "Unknown")
                 .font(.headline)
                 .lineLimit(2)
                 .multilineTextAlignment(.leading)
                 
             .frame(height: 64)
+        }
+        .contentShape(Rectangle())
+        .onTapGesture {
+            print("Row tapped")
+            viewModel.push(RMCharacterDetailsView(character: character))
         }
     }
 }

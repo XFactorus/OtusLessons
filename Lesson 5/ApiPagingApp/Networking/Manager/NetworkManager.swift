@@ -54,6 +54,31 @@ struct NetworkManager {
         }
     }
     
+    func downloadImage(imageUrl: String, completion: @escaping (_ responseModel: Data?, _ error: String?)->()) {
+        
+        router.request(.downloadImage(imageUrl)) { (data, response, error) in
+            if error != nil {
+                completion(nil, error?.localizedDescription)
+            }
+            
+            if let response = response as? HTTPURLResponse {
+                let result = self.handleNetworkResponse(response)
+                switch result {
+                case .success:
+                    guard let responseData = data else {
+                        completion(nil, NetworkResponse.noData.rawValue)
+                        return
+                    }
+                    
+                    completion(responseData, nil)
+                case .failure(let networkFailureError):
+                    completion(nil, networkFailureError)
+                }
+            }
+        }
+    }
+    
+    
     fileprivate func handleNetworkResponse(_ response: HTTPURLResponse) -> Result<String>{
         print("Response code: \(response.statusCode)")
         switch response.statusCode {

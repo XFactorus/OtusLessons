@@ -3,6 +3,7 @@ import Foundation
 
 public enum RickMortyApi {
     case getCharacters(page: Int)
+    case downloadImage(_ imageLink: String)
 }
 
 extension RickMortyApi: EndPointType {
@@ -15,6 +16,9 @@ extension RickMortyApi: EndPointType {
     
     var baseURL: URL {
         switch self {
+        case .downloadImage(let imageLink):
+            guard let url = URL(string: imageLink) else { fatalError("baseURL could not be configured.")}
+            return url
         default:
             guard let url = URL(string: environmentBaseURL) else { fatalError("baseURL could not be configured.")}
             return url
@@ -29,6 +33,8 @@ extension RickMortyApi: EndPointType {
         switch self {
         case .getCharacters:
             return "character/"
+        case .downloadImage:
+            return ""
         }
     }
     
@@ -45,6 +51,10 @@ extension RickMortyApi: EndPointType {
             return .requestParameters(bodyParameters: nil,
                                       bodyEncoding: .urlEncoding,
                                       urlParameters: ["page":page])
+        case .downloadImage:
+            return .requestParameters(bodyParameters: nil,
+                                                bodyEncoding: .urlEncoding,
+                                                urlParameters: nil)
         }
     }
     

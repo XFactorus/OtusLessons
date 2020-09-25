@@ -8,18 +8,6 @@
 import Foundation
 import Combine
 
-//extension RMCharacter: Identifiable {
-//    
-//    public var id: String {
-//        title ?? UUID().uuidString
-//    }
-//    
-//    var titleTrimmed: String {
-//        (title ?? "").replacingOccurrences(of: "\n", with: "")
-//    }
-//    
-//}
-
 final class RMCharactersViewModel: ObservableObject {
     
     @Published private(set) var listDataSource = [RMCharacter]()

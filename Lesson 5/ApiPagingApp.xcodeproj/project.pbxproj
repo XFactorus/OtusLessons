@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E1C8753251E25DA0026461E /* NavControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1C8752251E25DA0026461E /* NavControllerView.swift */; };
 		5E2B7F71251A3144008415AE /* ApiPagingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2B7F70251A3144008415AE /* ApiPagingAppApp.swift */; };
 		5E2B7F73251A3144008415AE /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2B7F72251A3144008415AE /* MainScreen.swift */; };
 		5E2B7F75251A3145008415AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E2B7F74251A3145008415AE /* Assets.xcassets */; };
@@ -21,30 +22,20 @@
 		5E391697251CEA8B0035A643 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E39168D251CEA8B0035A643 /* Router.swift */; };
 		5E391698251CEA8B0035A643 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E39168E251CEA8B0035A643 /* NetworkLogger.swift */; };
 		5E391699251CEA8B0035A643 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E39168F251CEA8B0035A643 /* EndPointType.swift */; };
-		5E3916BD251CEB600035A643 /* TransactionCompletedDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3916A6251CEB600035A643 /* TransactionCompletedDataModel.swift */; };
-		5E3916BE251CEB600035A643 /* EditMemberDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3916A7251CEB600035A643 /* EditMemberDataModel.swift */; };
-		5E3916BF251CEB600035A643 /* CoachPayForMemberDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3916A8251CEB600035A643 /* CoachPayForMemberDataModel.swift */; };
-		5E3916C0251CEB600035A643 /* DateDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3916A9251CEB600035A643 /* DateDataModel.swift */; };
-		5E3916C1251CEB600035A643 /* SendAttendanceDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3916AA251CEB600035A643 /* SendAttendanceDataModel.swift */; };
-		5E3916C2251CEB600035A643 /* CreateStudentFromTrialDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3916AB251CEB600035A643 /* CreateStudentFromTrialDataModel.swift */; };
-		5E3916C3251CEB600035A643 /* SearchGroupsByCoachIdDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3916AC251CEB600035A643 /* SearchGroupsByCoachIdDataModel.swift */; };
-		5E3916C4251CEB600035A643 /* BaseEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3916AD251CEB600035A643 /* BaseEncodable.swift */; };
-		5E3916C5251CEB600035A643 /* AddMemberToGroupDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3916AE251CEB600035A643 /* AddMemberToGroupDataModel.swift */; };
-		5E3916C6251CEB600035A643 /* DeleteMemberFromGroupDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3916AF251CEB600035A643 /* DeleteMemberFromGroupDataModel.swift */; };
-		5E3916C7251CEB600035A643 /* TrialLessonCreationDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3916B0251CEB600035A643 /* TrialLessonCreationDataModel.swift */; };
-		5E3916C8251CEB600035A643 /* TrialLessonSearchDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3916B1251CEB600035A643 /* TrialLessonSearchDataModel.swift */; };
-		5E3916C9251CEB600035A643 /* SignUpCoachDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3916B2251CEB600035A643 /* SignUpCoachDataModel.swift */; };
-		5E3916CA251CEB600035A643 /* SearchMembersByGroupDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3916B3251CEB600035A643 /* SearchMembersByGroupDataModel.swift */; };
-		5E3916CB251CEB600035A643 /* SearchMemberByIdDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3916B4251CEB600035A643 /* SearchMemberByIdDataModel.swift */; };
 		5E3D9DD7251D0AFF00F91F82 /* RMCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D9DD6251D0AFF00F91F82 /* RMCharacter.swift */; };
 		5E3D9DDB251D0EC100F91F82 /* RMCharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D9DDA251D0EC100F91F82 /* RMCharactersViewModel.swift */; };
 		5E3D9DDF251D129500F91F82 /* RMCharactersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D9DDE251D129500F91F82 /* RMCharactersListView.swift */; };
 		5E3D9DE6251D21DA00F91F82 /* RMInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D9DE5251D21DA00F91F82 /* RMInfo.swift */; };
 		5E3D9DE9251D222300F91F82 /* RMCharactersInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D9DE8251D222300F91F82 /* RMCharactersInfo.swift */; };
 		5E3D9DEE251D238400F91F82 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D9DED251D238400F91F82 /* Array.swift */; };
+		5EEE13D6251E565A004EDE1A /* RMCharacterDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEE13D5251E565A004EDE1A /* RMCharacterDetailsView.swift */; };
+		5EEE13DA251E5816004EDE1A /* BaseEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEE13D9251E5816004EDE1A /* BaseEncodable.swift */; };
+		5EEE13DD251E5D6B004EDE1A /* RMCharacterImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEE13DC251E5D6B004EDE1A /* RMCharacterImageView.swift */; };
+		5EEE13E2251E6475004EDE1A /* RMCharacterImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEE13E1251E6475004EDE1A /* RMCharacterImageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E1C8752251E25DA0026461E /* NavControllerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavControllerView.swift; sourceTree = "<group>"; };
 		5E2B7F6D251A3144008415AE /* ApiPagingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApiPagingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E2B7F70251A3144008415AE /* ApiPagingAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiPagingAppApp.swift; sourceTree = "<group>"; };
 		5E2B7F72251A3144008415AE /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
@@ -61,27 +52,16 @@
 		5E39168D251CEA8B0035A643 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		5E39168E251CEA8B0035A643 /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
 		5E39168F251CEA8B0035A643 /* EndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
-		5E3916A6251CEB600035A643 /* TransactionCompletedDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionCompletedDataModel.swift; sourceTree = "<group>"; };
-		5E3916A7251CEB600035A643 /* EditMemberDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditMemberDataModel.swift; sourceTree = "<group>"; };
-		5E3916A8251CEB600035A643 /* CoachPayForMemberDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachPayForMemberDataModel.swift; sourceTree = "<group>"; };
-		5E3916A9251CEB600035A643 /* DateDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateDataModel.swift; sourceTree = "<group>"; };
-		5E3916AA251CEB600035A643 /* SendAttendanceDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendAttendanceDataModel.swift; sourceTree = "<group>"; };
-		5E3916AB251CEB600035A643 /* CreateStudentFromTrialDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateStudentFromTrialDataModel.swift; sourceTree = "<group>"; };
-		5E3916AC251CEB600035A643 /* SearchGroupsByCoachIdDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchGroupsByCoachIdDataModel.swift; sourceTree = "<group>"; };
-		5E3916AD251CEB600035A643 /* BaseEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseEncodable.swift; sourceTree = "<group>"; };
-		5E3916AE251CEB600035A643 /* AddMemberToGroupDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMemberToGroupDataModel.swift; sourceTree = "<group>"; };
-		5E3916AF251CEB600035A643 /* DeleteMemberFromGroupDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteMemberFromGroupDataModel.swift; sourceTree = "<group>"; };
-		5E3916B0251CEB600035A643 /* TrialLessonCreationDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrialLessonCreationDataModel.swift; sourceTree = "<group>"; };
-		5E3916B1251CEB600035A643 /* TrialLessonSearchDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrialLessonSearchDataModel.swift; sourceTree = "<group>"; };
-		5E3916B2251CEB600035A643 /* SignUpCoachDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpCoachDataModel.swift; sourceTree = "<group>"; };
-		5E3916B3251CEB600035A643 /* SearchMembersByGroupDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMembersByGroupDataModel.swift; sourceTree = "<group>"; };
-		5E3916B4251CEB600035A643 /* SearchMemberByIdDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMemberByIdDataModel.swift; sourceTree = "<group>"; };
 		5E3D9DD6251D0AFF00F91F82 /* RMCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacter.swift; sourceTree = "<group>"; };
 		5E3D9DDA251D0EC100F91F82 /* RMCharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharactersViewModel.swift; sourceTree = "<group>"; };
 		5E3D9DDE251D129500F91F82 /* RMCharactersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharactersListView.swift; sourceTree = "<group>"; };
 		5E3D9DE5251D21DA00F91F82 /* RMInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMInfo.swift; sourceTree = "<group>"; };
 		5E3D9DE8251D222300F91F82 /* RMCharactersInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharactersInfo.swift; sourceTree = "<group>"; };
 		5E3D9DED251D238400F91F82 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		5EEE13D5251E565A004EDE1A /* RMCharacterDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterDetailsView.swift; sourceTree = "<group>"; };
+		5EEE13D9251E5816004EDE1A /* BaseEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseEncodable.swift; sourceTree = "<group>"; };
+		5EEE13DC251E5D6B004EDE1A /* RMCharacterImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterImageView.swift; sourceTree = "<group>"; };
+		5EEE13E1251E6475004EDE1A /* RMCharacterImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterImageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +75,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E1C8751251E25DA0026461E /* NavStack */ = {
+			isa = PBXGroup;
+			children = (
+				5E1C8752251E25DA0026461E /* NavControllerView.swift */,
+			);
+			path = NavStack;
+			sourceTree = "<group>";
+		};
 		5E2B7F64251A3144008415AE = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +102,7 @@
 		5E2B7F6F251A3144008415AE /* ApiPagingApp */ = {
 			isa = PBXGroup;
 			children = (
+				5E1C8751251E25DA0026461E /* NavStack */,
 				5E3D9DEC251D238400F91F82 /* Extensions */,
 				5E3D9DDD251D125C00F91F82 /* Views */,
 				5E3D9DD9251D0EB200F91F82 /* ViewModels */,
@@ -212,22 +201,7 @@
 		5E3916A5251CEB600035A643 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
-				5E3916CE251CF30C0035A643 /* RickMorty */,
-				5E3916A6251CEB600035A643 /* TransactionCompletedDataModel.swift */,
-				5E3916A7251CEB600035A643 /* EditMemberDataModel.swift */,
-				5E3916A8251CEB600035A643 /* CoachPayForMemberDataModel.swift */,
-				5E3916A9251CEB600035A643 /* DateDataModel.swift */,
-				5E3916AA251CEB600035A643 /* SendAttendanceDataModel.swift */,
-				5E3916AB251CEB600035A643 /* CreateStudentFromTrialDataModel.swift */,
-				5E3916AC251CEB600035A643 /* SearchGroupsByCoachIdDataModel.swift */,
-				5E3916AD251CEB600035A643 /* BaseEncodable.swift */,
-				5E3916AE251CEB600035A643 /* AddMemberToGroupDataModel.swift */,
-				5E3916AF251CEB600035A643 /* DeleteMemberFromGroupDataModel.swift */,
-				5E3916B0251CEB600035A643 /* TrialLessonCreationDataModel.swift */,
-				5E3916B1251CEB600035A643 /* TrialLessonSearchDataModel.swift */,
-				5E3916B2251CEB600035A643 /* SignUpCoachDataModel.swift */,
-				5E3916B3251CEB600035A643 /* SearchMembersByGroupDataModel.swift */,
-				5E3916B4251CEB600035A643 /* SearchMemberByIdDataModel.swift */,
+				5EEE13D9251E5816004EDE1A /* BaseEncodable.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -242,17 +216,11 @@
 			path = RickMorty;
 			sourceTree = "<group>";
 		};
-		5E3916CE251CF30C0035A643 /* RickMorty */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = RickMorty;
-			sourceTree = "<group>";
-		};
 		5E3D9DD9251D0EB200F91F82 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				5E3D9DDA251D0EC100F91F82 /* RMCharactersViewModel.swift */,
+				5EEE13E1251E6475004EDE1A /* RMCharacterImageViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -261,7 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				5E2B7F72251A3144008415AE /* MainScreen.swift */,
-				5E3D9DDE251D129500F91F82 /* RMCharactersListView.swift */,
+				5EEE13D3251E55DA004EDE1A /* RickMortyViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -272,6 +240,16 @@
 				5E3D9DED251D238400F91F82 /* Array.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5EEE13D3251E55DA004EDE1A /* RickMortyViews */ = {
+			isa = PBXGroup;
+			children = (
+				5E3D9DDE251D129500F91F82 /* RMCharactersListView.swift */,
+				5EEE13D5251E565A004EDE1A /* RMCharacterDetailsView.swift */,
+				5EEE13DC251E5D6B004EDE1A /* RMCharacterImageView.swift */,
+			);
+			path = RickMortyViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,39 +321,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E3916C2251CEB600035A643 /* CreateStudentFromTrialDataModel.swift in Sources */,
 				5E391693251CEA8B0035A643 /* NetworkManager.swift in Sources */,
 				5E391692251CEA8B0035A643 /* JSONParameterEncoder.swift in Sources */,
-				5E3916C3251CEB600035A643 /* SearchGroupsByCoachIdDataModel.swift in Sources */,
 				5E3D9DE6251D21DA00F91F82 /* RMInfo.swift in Sources */,
 				5E3D9DDB251D0EC100F91F82 /* RMCharactersViewModel.swift in Sources */,
 				5E391697251CEA8B0035A643 /* Router.swift in Sources */,
 				5E391691251CEA8B0035A643 /* URLParameterEncoding.swift in Sources */,
-				5E3916C0251CEB600035A643 /* DateDataModel.swift in Sources */,
+				5EEE13DD251E5D6B004EDE1A /* RMCharacterImageView.swift in Sources */,
 				5E391690251CEA8B0035A643 /* ParameterEncoding.swift in Sources */,
-				5E3916C9251CEB600035A643 /* SignUpCoachDataModel.swift in Sources */,
 				5E391695251CEA8B0035A643 /* HTTPTask.swift in Sources */,
 				5E3D9DEE251D238400F91F82 /* Array.swift in Sources */,
-				5E3916BF251CEB600035A643 /* CoachPayForMemberDataModel.swift in Sources */,
 				5E391696251CEA8B0035A643 /* HTTPMethod.swift in Sources */,
 				5E2B7F73251A3144008415AE /* MainScreen.swift in Sources */,
+				5EEE13DA251E5816004EDE1A /* BaseEncodable.swift in Sources */,
 				5E3D9DE9251D222300F91F82 /* RMCharactersInfo.swift in Sources */,
 				5E391699251CEA8B0035A643 /* EndPointType.swift in Sources */,
-				5E3916C4251CEB600035A643 /* BaseEncodable.swift in Sources */,
+				5EEE13D6251E565A004EDE1A /* RMCharacterDetailsView.swift in Sources */,
 				5E2B7F71251A3144008415AE /* ApiPagingAppApp.swift in Sources */,
-				5E3916C6251CEB600035A643 /* DeleteMemberFromGroupDataModel.swift in Sources */,
-				5E3916BE251CEB600035A643 /* EditMemberDataModel.swift in Sources */,
-				5E3916BD251CEB600035A643 /* TransactionCompletedDataModel.swift in Sources */,
+				5EEE13E2251E6475004EDE1A /* RMCharacterImageViewModel.swift in Sources */,
+				5E1C8753251E25DA0026461E /* NavControllerView.swift in Sources */,
 				5E3D9DD7251D0AFF00F91F82 /* RMCharacter.swift in Sources */,
-				5E3916CA251CEB600035A643 /* SearchMembersByGroupDataModel.swift in Sources */,
 				5E3D9DDF251D129500F91F82 /* RMCharactersListView.swift in Sources */,
-				5E3916C8251CEB600035A643 /* TrialLessonSearchDataModel.swift in Sources */,
 				5E391694251CEA8B0035A643 /* RickMortyEndPoint.swift in Sources */,
-				5E3916CB251CEB600035A643 /* SearchMemberByIdDataModel.swift in Sources */,
 				5E391698251CEA8B0035A643 /* NetworkLogger.swift in Sources */,
-				5E3916C7251CEB600035A643 /* TrialLessonCreationDataModel.swift in Sources */,
-				5E3916C5251CEB600035A643 /* AddMemberToGroupDataModel.swift in Sources */,
-				5E3916C1251CEB600035A643 /* SendAttendanceDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
