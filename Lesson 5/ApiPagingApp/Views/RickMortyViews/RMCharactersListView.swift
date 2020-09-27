@@ -10,6 +10,7 @@ import SwiftUI
 struct RMCharactersListView: View {
     
     @EnvironmentObject var viewModel: RMCharactersViewModel
+    @EnvironmentObject private var navModel: NavControllerViewModel
     
     var body: some View {
         List(self.viewModel.listDataSource) { character in
@@ -19,6 +20,10 @@ struct RMCharactersListView: View {
                         self.viewModel.fetchPage()
                     }
                 }
+                .onTapGesture {
+                    print("Row tapped")
+                    navModel.push(RMCharacterDetailsView(character: character))
+                }
         }
     }
     
@@ -27,8 +32,6 @@ struct RMCharactersListView: View {
 struct RMCharacterCell: View {
     
     @State var character: RMCharacter
-    
-    @EnvironmentObject private var viewModel: NavControllerViewModel
     
     var body: some View {
         HStack {
@@ -53,10 +56,6 @@ struct RMCharacterCell: View {
             .frame(height: 64)
         }
         .contentShape(Rectangle())
-        .onTapGesture {
-            print("Row tapped")
-            viewModel.push(RMCharacterDetailsView(character: character))
-        }
     }
 }
 

@@ -14,7 +14,7 @@ struct MainScreen: View {
     @State private var selection: Int = 0
     
     var body: some View {
-        NavControllerView(transition: .custom(.slide))  {
+        NavControllerView()  {
             VStack {
                 Picker("Options", selection: $selection) {
                     Text("Rick & Morty list").tag(0)

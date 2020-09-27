@@ -42,9 +42,7 @@ final class RMCharacterImageViewModel: ObservableObject {
             DispatchQueue.main.async {
                 self.characterImage = image
             }
-           
-            
-            
+
         }
     }
     
