@@ -43,7 +43,7 @@ struct NavControllerView<Content>: View where Content: View {
     private let content: Content
     private let transition: (push: AnyTransition, pop: AnyTransition)
     
-    init(transition: NavTransiton, easing: Animation = .easeOut(duration: 0.33), @ViewBuilder content: @escaping () -> Content) {
+    init(transition: NavTransiton = .default, easing: Animation = .easeOut(duration: 0.33), @ViewBuilder content: @escaping () -> Content) {
         self.viewModel = NavControllerViewModel(easing: easing)
         self.content = content()
         switch transition {
@@ -51,6 +51,8 @@ struct NavControllerView<Content>: View where Content: View {
             self.transition = (transition, transition)
         case .none:
             self.transition = (.identity, .identity)
+        default:
+            self.transition = NavTransiton.defaultTransitions
         }
     }
     
@@ -137,6 +139,13 @@ private struct Screen: Identifiable, Equatable {
 enum NavTransiton {
     case none
     case custom(AnyTransition)
+    case `default`
+    
+    public static var defaultTransitions: (push: AnyTransition, pop: AnyTransition) {
+        let pushTrans = AnyTransition.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading))
+        let popTrans = AnyTransition.asymmetric(insertion: .move(edge: .leading), removal: .move(edge: .trailing))
+        return (pushTrans, popTrans)
+    }
 }
 
 enum NavType {
