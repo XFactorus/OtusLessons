@@ -9,7 +9,8 @@ import SwiftUI
 
 struct MainScreen: View {
     
-    @EnvironmentObject var viewModel: RMCharactersViewModel
+    @EnvironmentObject var rmViewModel: RMCharactersViewModel
+    @EnvironmentObject var bbViewModel: BBCharactersViewModel
     
     @State private var selection: Int = 0
     
@@ -18,17 +19,22 @@ struct MainScreen: View {
             VStack {
                 Picker("Options", selection: $selection) {
                     Text("Rick & Morty list").tag(0)
-                    Text("Two Column").tag(1)
+                    Text("Breaking Bad list").tag(1)
                 }.pickerStyle(SegmentedPickerStyle())
                 
                 if selection == 0 {
                     RMCharactersListView()
                         .onAppear() {
-                            self.viewModel.fetchPage()
+                            self.rmViewModel.loadInitialList()
+                        }
+                } else {
+                    BBCharactersListView()
+                        .onAppear() {
+                            self.bbViewModel.loadInitialList()
                         }
                 }
             }.onAppear() {
-                self.viewModel.fetchPage() // first page
+                self.rmViewModel.loadInitialList()
             }
         }
     }

@@ -15,6 +15,8 @@ final class RMCharactersViewModel: ObservableObject {
     @Published private(set) var isPageLoading = false
     @Published private(set) var page: Int = 0
     
+    private var initialInfoLoaded = false
+    
     init(isMock: Bool = false) {
         if isMock {
             self.loadMockData()
@@ -22,6 +24,13 @@ final class RMCharactersViewModel: ObservableObject {
     }
     
     let networkManager = NetworkManager()
+    
+    func loadInitialList() {
+        if !initialInfoLoaded {
+            initialInfoLoaded.toggle()
+            fetchPage()
+        }
+    }
     
     func fetchPage() {
         
@@ -31,7 +40,7 @@ final class RMCharactersViewModel: ObservableObject {
   
         isPageLoading = true
                 
-        networkManager.loadCharacters(page) { (characters, errorText) in
+        networkManager.loadRMCharacters(page) { (characters, errorText) in
             DispatchQueue.main.async {
                 self.isPageLoading = false
                 

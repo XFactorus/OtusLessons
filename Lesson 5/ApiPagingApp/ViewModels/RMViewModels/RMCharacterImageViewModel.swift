@@ -9,7 +9,6 @@ import Foundation
 import Combine
 import SwiftUI
 
-
 final class RMCharacterImageViewModel: ObservableObject {
     @Published private(set) var characterImage = UIImage()
     
@@ -27,7 +26,7 @@ final class RMCharacterImageViewModel: ObservableObject {
             print("Empty image URL string")
             return
         }
-        networkManager.downloadImage(imageUrl: imageUrl)
+        networkManager.downloadRMImage(imageUrl: imageUrl)
         { (imageData, errorText) in
             guard let imageData = imageData, errorText == nil else {
                 print(errorText ?? "Empty image")
@@ -45,5 +44,4 @@ final class RMCharacterImageViewModel: ObservableObject {
 
         }
     }
-    
 }

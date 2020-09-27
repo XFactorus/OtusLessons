@@ -13,6 +13,7 @@ struct ApiPagingAppApp: App {
         WindowGroup {
             MainScreen()
                 .environmentObject(RMCharactersViewModel())
+                .environmentObject(BBCharactersViewModel())
         }
     }
 }

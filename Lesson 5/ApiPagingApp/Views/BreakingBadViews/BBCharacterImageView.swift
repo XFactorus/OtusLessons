@@ -1,19 +1,19 @@
 //
-//  RMCharacterImage.swift
+//  BBCharacterImageView.swift
 //  ApiPagingApp
 //
-//  Created by Vladyslav Pokryshka on 25.09.2020.
+//  Created by Vladyslav Pokryshka on 27.09.2020.
 //
 
 import SwiftUI
 
-struct RMCharacterImageView: View {
+struct BBCharacterImageView: View {
     var imageLink: String?
     
-    @ObservedObject var characterImageViewModel:RMCharacterImageViewModel
+    @ObservedObject var characterImageViewModel:BBCharacterImageViewModel
     
     init(withURL url:String?) {
-        characterImageViewModel = RMCharacterImageViewModel(urlString: url ?? "")
+        characterImageViewModel = BBCharacterImageViewModel(urlString: url ?? "")
     }
     
     var body: some View {
@@ -23,18 +23,19 @@ struct RMCharacterImageView: View {
             Image(uiImage: characterImageViewModel.characterImage)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
+//                .frame(width:300, height:300)
                 .onAppear(perform: {
                     characterImageViewModel.loadCharacterImage()
-            })
+                })
             Spacer()
         }
     }
 }
 
-struct RMCharacterImage_Previews: PreviewProvider {
+struct BBCharacterImageView_Previews: PreviewProvider {
     static var previews: some View {
         NavControllerView(transition: .custom(.slide))  {
-            RMCharacterImageView(withURL: "https://rickandmortyapi.com/api/character/avatar/1.jpeg")
+            BBCharacterImageView(withURL: "https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg")
         }
     }
 }
