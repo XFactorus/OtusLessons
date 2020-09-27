@@ -248,8 +248,7 @@ struct FakeNavBar: View {
     @EnvironmentObject private var viewModel: NavControllerViewModel
     
     let label: String
-    //let backAction: ()->Void
-    
+
     var body: some View {
         ZStack {
             HStack {
@@ -258,7 +257,6 @@ struct FakeNavBar: View {
                     .simultaneousGesture(TapGesture()
                         .onEnded {
                             self.viewModel.pop(to: .previous)
-                            //self.backAction()
                         }
                     )
                     .padding(.top, UIDevice.current.hasNotch ? 40 : 20)
