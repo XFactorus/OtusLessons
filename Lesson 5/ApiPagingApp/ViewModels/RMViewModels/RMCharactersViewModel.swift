@@ -13,7 +13,7 @@ final class RMCharactersViewModel: ObservableObject {
     @Published private(set) var listDataSource = [RMCharacter]()
     
     @Published private(set) var isPageLoading = false
-    @Published private(set) var page: Int = 0
+    @Published private(set) var page: Int = 1
     
     private var initialInfoLoaded = false
     
