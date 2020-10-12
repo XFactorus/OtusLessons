@@ -16,7 +16,7 @@
 		5E0C4B1E2520CEAE0050CDBD /* BBCharacterImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0C4B1D2520CEAE0050CDBD /* BBCharacterImageViewModel.swift */; };
 		5E1C8753251E25DA0026461E /* NavControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1C8752251E25DA0026461E /* NavControllerView.swift */; };
 		5E25168625335F5E002F89CE /* RickMortyApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E25168525335F5E002F89CE /* RickMortyApiService.swift */; };
-		5E2B7F71251A3144008415AE /* ApiPagingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2B7F70251A3144008415AE /* ApiPagingAppApp.swift */; };
+		5E2B7F71251A3144008415AE /* ServiceLocatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2B7F70251A3144008415AE /* ServiceLocatorApp.swift */; };
 		5E2B7F73251A3144008415AE /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2B7F72251A3144008415AE /* MainScreen.swift */; };
 		5E2B7F75251A3145008415AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E2B7F74251A3145008415AE /* Assets.xcassets */; };
 		5E2B7F78251A3145008415AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E2B7F77251A3145008415AE /* Preview Assets.xcassets */; };
@@ -39,6 +39,8 @@
 		5E6B662425334A1200F108AB /* BaseNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6B662325334A1200F108AB /* BaseNetworkService.swift */; };
 		5E6B662825334F8400F108AB /* BreakingBadApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6B662725334F8400F108AB /* BreakingBadApiService.swift */; };
 		5E8C011025335B81003BEB9C /* NetworkEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C010F25335B81003BEB9C /* NetworkEnums.swift */; };
+		5EB76C7A2534CD08000A1C13 /* Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB76C792534CD08000A1C13 /* Inject.swift */; };
+		5EB76C7E2534CD45000A1C13 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB76C7D2534CD45000A1C13 /* Resolver.swift */; };
 		5EEE13D6251E565A004EDE1A /* RMCharacterDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEE13D5251E565A004EDE1A /* RMCharacterDetailsView.swift */; };
 		5EEE13DA251E5816004EDE1A /* BaseEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEE13D9251E5816004EDE1A /* BaseEncodable.swift */; };
 		5EEE13DD251E5D6B004EDE1A /* RMCharacterImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEE13DC251E5D6B004EDE1A /* RMCharacterImageView.swift */; };
@@ -56,7 +58,7 @@
 		5E1C8752251E25DA0026461E /* NavControllerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavControllerView.swift; sourceTree = "<group>"; };
 		5E25168525335F5E002F89CE /* RickMortyApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickMortyApiService.swift; sourceTree = "<group>"; };
 		5E2B7F6D251A3144008415AE /* ServiceLocatorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServiceLocatorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E2B7F70251A3144008415AE /* ApiPagingAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiPagingAppApp.swift; sourceTree = "<group>"; };
+		5E2B7F70251A3144008415AE /* ServiceLocatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocatorApp.swift; sourceTree = "<group>"; };
 		5E2B7F72251A3144008415AE /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		5E2B7F74251A3145008415AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E2B7F77251A3145008415AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -80,6 +82,8 @@
 		5E6B662325334A1200F108AB /* BaseNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkService.swift; sourceTree = "<group>"; };
 		5E6B662725334F8400F108AB /* BreakingBadApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakingBadApiService.swift; sourceTree = "<group>"; };
 		5E8C010F25335B81003BEB9C /* NetworkEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEnums.swift; sourceTree = "<group>"; };
+		5EB76C792534CD08000A1C13 /* Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inject.swift; sourceTree = "<group>"; };
+		5EB76C7D2534CD45000A1C13 /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
 		5EEE13D5251E565A004EDE1A /* RMCharacterDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterDetailsView.swift; sourceTree = "<group>"; };
 		5EEE13D9251E5816004EDE1A /* BaseEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseEncodable.swift; sourceTree = "<group>"; };
 		5EEE13DC251E5D6B004EDE1A /* RMCharacterImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterImageView.swift; sourceTree = "<group>"; };
@@ -160,6 +164,7 @@
 		5E2B7F6F251A3144008415AE /* ServiceLocatorApp */ = {
 			isa = PBXGroup;
 			children = (
+				5EB76C782534CCFB000A1C13 /* Resolver */,
 				5E6B6618253346CB00F108AB /* Application */,
 				5E3D9DEC251D238400F91F82 /* Extensions */,
 				5E1C8751251E25DA0026461E /* NavStack */,
@@ -298,7 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				5E2B7F79251A3145008415AE /* Info.plist */,
-				5E2B7F70251A3144008415AE /* ApiPagingAppApp.swift */,
+				5E2B7F70251A3144008415AE /* ServiceLocatorApp.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -331,6 +336,15 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		5EB76C782534CCFB000A1C13 /* Resolver */ = {
+			isa = PBXGroup;
+			children = (
+				5EB76C792534CD08000A1C13 /* Inject.swift */,
+				5EB76C7D2534CD45000A1C13 /* Resolver.swift */,
+			);
+			path = Resolver;
+			sourceTree = "<group>";
+		};
 		5EEE13D3251E55DA004EDE1A /* RickMortyViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -357,6 +371,8 @@
 			dependencies = (
 			);
 			name = ServiceLocatorApp;
+			packageProductDependencies = (
+			);
 			productName = ApiPagingApp;
 			productReference = 5E2B7F6D251A3144008415AE /* ServiceLocatorApp.app */;
 			productType = "com.apple.product-type.application";
@@ -384,6 +400,8 @@
 				Base,
 			);
 			mainGroup = 5E2B7F64251A3144008415AE;
+			packageReferences = (
+			);
 			productRefGroup = 5E2B7F6E251A3144008415AE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -410,8 +428,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EB76C7A2534CD08000A1C13 /* Inject.swift in Sources */,
 				5E6B66202533481D00F108AB /* ServiceLocator.swift in Sources */,
 				5E391692251CEA8B0035A643 /* JSONParameterEncoder.swift in Sources */,
+				5EB76C7E2534CD45000A1C13 /* Resolver.swift in Sources */,
 				5E3D9DE6251D21DA00F91F82 /* RMInfo.swift in Sources */,
 				5E3D9DDB251D0EC100F91F82 /* RMCharactersViewModel.swift in Sources */,
 				5E391697251CEA8B0035A643 /* Router.swift in Sources */,
@@ -435,7 +455,7 @@
 				5E391699251CEA8B0035A643 /* EndPointType.swift in Sources */,
 				5E0C4B1B2520CE7C0050CDBD /* BBCharacterImageView.swift in Sources */,
 				5EEE13D6251E565A004EDE1A /* RMCharacterDetailsView.swift in Sources */,
-				5E2B7F71251A3144008415AE /* ApiPagingAppApp.swift in Sources */,
+				5E2B7F71251A3144008415AE /* ServiceLocatorApp.swift in Sources */,
 				5EEE13E2251E6475004EDE1A /* RMCharacterImageViewModel.swift in Sources */,
 				5E1C8753251E25DA0026461E /* NavControllerView.swift in Sources */,
 				5E3D9DD7251D0AFF00F91F82 /* RMCharacter.swift in Sources */,
