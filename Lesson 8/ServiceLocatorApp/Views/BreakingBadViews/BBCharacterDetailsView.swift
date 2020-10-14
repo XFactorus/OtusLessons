@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import TVShowsLibrary
 
 struct BBCharacterDetailsView: View {
     var character: BBCharacter

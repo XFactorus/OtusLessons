@@ -8,6 +8,7 @@
 import Foundation
 import Combine
 import SwiftUI
+import TVShowsLibrary
 
 final class BBCharacterImageViewModel: ObservableObject {
     @Published private(set) var characterImage = UIImage()

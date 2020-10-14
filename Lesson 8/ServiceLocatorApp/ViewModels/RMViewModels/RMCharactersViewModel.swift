@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import TVShowsLibrary
 
 final class RMCharactersViewModel: ObservableObject {
     
@@ -54,8 +55,7 @@ final class RMCharactersViewModel: ObservableObject {
     }
     
     func loadMockData() {
-        listDataSource = [RMCharacter(id: 1, name: "Test Rick", status: "Alive", species: nil, type: nil, gender: "Male", origin: nil, location: nil, image: nil, episode: nil, url: nil, created: nil),
-                          RMCharacter(id: 2, name: "Test Morty", status: "Alive", species: nil, type: nil, gender: "Male", origin: nil, location: nil, image: nil, episode: nil, url: nil, created: nil)]
+        listDataSource = [RMCharacter.getMockCharacter(), RMCharacter.getMockCharacter()]
     }
     
 }

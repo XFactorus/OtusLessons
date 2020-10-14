@@ -3,89 +3,50 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E0C4B062520C2B30050CDBD /* BBCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0C4B052520C2B30050CDBD /* BBCharacter.swift */; };
-		5E0C4B092520C51C0050CDBD /* BreakingBadEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0C4B082520C51C0050CDBD /* BreakingBadEndPoint.swift */; };
 		5E0C4B0D2520C78E0050CDBD /* BBCharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0C4B0C2520C78E0050CDBD /* BBCharactersViewModel.swift */; };
 		5E0C4B142520CA540050CDBD /* RMCharactersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0C4B132520CA540050CDBD /* RMCharactersListView.swift */; };
 		5E0C4B182520CCB90050CDBD /* BBCharacterDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0C4B172520CCB90050CDBD /* BBCharacterDetailsView.swift */; };
 		5E0C4B1B2520CE7C0050CDBD /* BBCharacterImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0C4B1A2520CE7C0050CDBD /* BBCharacterImageView.swift */; };
 		5E0C4B1E2520CEAE0050CDBD /* BBCharacterImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0C4B1D2520CEAE0050CDBD /* BBCharacterImageViewModel.swift */; };
+		5E14585C253751D000B2A209 /* TVShowsLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 5E14585B253751D000B2A209 /* TVShowsLibrary */; };
 		5E1C8753251E25DA0026461E /* NavControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1C8752251E25DA0026461E /* NavControllerView.swift */; };
-		5E25168625335F5E002F89CE /* RickMortyApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E25168525335F5E002F89CE /* RickMortyApiService.swift */; };
 		5E2B7F71251A3144008415AE /* ServiceLocatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2B7F70251A3144008415AE /* ServiceLocatorApp.swift */; };
 		5E2B7F73251A3144008415AE /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2B7F72251A3144008415AE /* MainScreen.swift */; };
 		5E2B7F75251A3145008415AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E2B7F74251A3145008415AE /* Assets.xcassets */; };
 		5E2B7F78251A3145008415AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E2B7F77251A3145008415AE /* Preview Assets.xcassets */; };
-		5E391690251CEA8B0035A643 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E391683251CEA8B0035A643 /* ParameterEncoding.swift */; };
-		5E391691251CEA8B0035A643 /* URLParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E391684251CEA8B0035A643 /* URLParameterEncoding.swift */; };
-		5E391692251CEA8B0035A643 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E391685251CEA8B0035A643 /* JSONParameterEncoder.swift */; };
-		5E391694251CEA8B0035A643 /* RickMortyEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E391689251CEA8B0035A643 /* RickMortyEndPoint.swift */; };
-		5E391695251CEA8B0035A643 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E39168B251CEA8B0035A643 /* HTTPTask.swift */; };
-		5E391696251CEA8B0035A643 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E39168C251CEA8B0035A643 /* HTTPMethod.swift */; };
-		5E391697251CEA8B0035A643 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E39168D251CEA8B0035A643 /* Router.swift */; };
-		5E391698251CEA8B0035A643 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E39168E251CEA8B0035A643 /* NetworkLogger.swift */; };
-		5E391699251CEA8B0035A643 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E39168F251CEA8B0035A643 /* EndPointType.swift */; };
-		5E3D9DD7251D0AFF00F91F82 /* RMCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D9DD6251D0AFF00F91F82 /* RMCharacter.swift */; };
 		5E3D9DDB251D0EC100F91F82 /* RMCharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D9DDA251D0EC100F91F82 /* RMCharactersViewModel.swift */; };
 		5E3D9DDF251D129500F91F82 /* BBCharactersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D9DDE251D129500F91F82 /* BBCharactersListView.swift */; };
-		5E3D9DE6251D21DA00F91F82 /* RMInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D9DE5251D21DA00F91F82 /* RMInfo.swift */; };
-		5E3D9DE9251D222300F91F82 /* RMCharactersInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D9DE8251D222300F91F82 /* RMCharactersInfo.swift */; };
 		5E3D9DEE251D238400F91F82 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D9DED251D238400F91F82 /* Array.swift */; };
-		5E6B66202533481D00F108AB /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6B661F2533481D00F108AB /* ServiceLocator.swift */; };
-		5E6B662425334A1200F108AB /* BaseNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6B662325334A1200F108AB /* BaseNetworkService.swift */; };
-		5E6B662825334F8400F108AB /* BreakingBadApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6B662725334F8400F108AB /* BreakingBadApiService.swift */; };
-		5E8C011025335B81003BEB9C /* NetworkEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C010F25335B81003BEB9C /* NetworkEnums.swift */; };
 		5EB76C7A2534CD08000A1C13 /* Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB76C792534CD08000A1C13 /* Inject.swift */; };
 		5EB76C7E2534CD45000A1C13 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB76C7D2534CD45000A1C13 /* Resolver.swift */; };
 		5EEE13D6251E565A004EDE1A /* RMCharacterDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEE13D5251E565A004EDE1A /* RMCharacterDetailsView.swift */; };
-		5EEE13DA251E5816004EDE1A /* BaseEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEE13D9251E5816004EDE1A /* BaseEncodable.swift */; };
 		5EEE13DD251E5D6B004EDE1A /* RMCharacterImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEE13DC251E5D6B004EDE1A /* RMCharacterImageView.swift */; };
 		5EEE13E2251E6475004EDE1A /* RMCharacterImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEE13E1251E6475004EDE1A /* RMCharacterImageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5E0C4B052520C2B30050CDBD /* BBCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCharacter.swift; sourceTree = "<group>"; };
-		5E0C4B082520C51C0050CDBD /* BreakingBadEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakingBadEndPoint.swift; sourceTree = "<group>"; };
 		5E0C4B0C2520C78E0050CDBD /* BBCharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCharactersViewModel.swift; sourceTree = "<group>"; };
 		5E0C4B132520CA540050CDBD /* RMCharactersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharactersListView.swift; sourceTree = "<group>"; };
 		5E0C4B172520CCB90050CDBD /* BBCharacterDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCharacterDetailsView.swift; sourceTree = "<group>"; };
 		5E0C4B1A2520CE7C0050CDBD /* BBCharacterImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCharacterImageView.swift; sourceTree = "<group>"; };
 		5E0C4B1D2520CEAE0050CDBD /* BBCharacterImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCharacterImageViewModel.swift; sourceTree = "<group>"; };
 		5E1C8752251E25DA0026461E /* NavControllerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavControllerView.swift; sourceTree = "<group>"; };
-		5E25168525335F5E002F89CE /* RickMortyApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickMortyApiService.swift; sourceTree = "<group>"; };
 		5E2B7F6D251A3144008415AE /* ServiceLocatorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServiceLocatorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E2B7F70251A3144008415AE /* ServiceLocatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocatorApp.swift; sourceTree = "<group>"; };
 		5E2B7F72251A3144008415AE /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		5E2B7F74251A3145008415AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E2B7F77251A3145008415AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5E2B7F79251A3145008415AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5E391683251CEA8B0035A643 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
-		5E391684251CEA8B0035A643 /* URLParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParameterEncoding.swift; sourceTree = "<group>"; };
-		5E391685251CEA8B0035A643 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
-		5E391689251CEA8B0035A643 /* RickMortyEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RickMortyEndPoint.swift; sourceTree = "<group>"; };
-		5E39168B251CEA8B0035A643 /* HTTPTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
-		5E39168C251CEA8B0035A643 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
-		5E39168D251CEA8B0035A643 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		5E39168E251CEA8B0035A643 /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
-		5E39168F251CEA8B0035A643 /* EndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
-		5E3D9DD6251D0AFF00F91F82 /* RMCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacter.swift; sourceTree = "<group>"; };
 		5E3D9DDA251D0EC100F91F82 /* RMCharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharactersViewModel.swift; sourceTree = "<group>"; };
 		5E3D9DDE251D129500F91F82 /* BBCharactersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCharactersListView.swift; sourceTree = "<group>"; };
-		5E3D9DE5251D21DA00F91F82 /* RMInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMInfo.swift; sourceTree = "<group>"; };
-		5E3D9DE8251D222300F91F82 /* RMCharactersInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharactersInfo.swift; sourceTree = "<group>"; };
 		5E3D9DED251D238400F91F82 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
-		5E6B661F2533481D00F108AB /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
-		5E6B662325334A1200F108AB /* BaseNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkService.swift; sourceTree = "<group>"; };
-		5E6B662725334F8400F108AB /* BreakingBadApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakingBadApiService.swift; sourceTree = "<group>"; };
-		5E8C010F25335B81003BEB9C /* NetworkEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEnums.swift; sourceTree = "<group>"; };
 		5EB76C792534CD08000A1C13 /* Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inject.swift; sourceTree = "<group>"; };
 		5EB76C7D2534CD45000A1C13 /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
 		5EEE13D5251E565A004EDE1A /* RMCharacterDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterDetailsView.swift; sourceTree = "<group>"; };
-		5EEE13D9251E5816004EDE1A /* BaseEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseEncodable.swift; sourceTree = "<group>"; };
 		5EEE13DC251E5D6B004EDE1A /* RMCharacterImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterImageView.swift; sourceTree = "<group>"; };
 		5EEE13E1251E6475004EDE1A /* RMCharacterImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterImageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,20 +56,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E14585C253751D000B2A209 /* TVShowsLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5E0C4B042520C20C0050CDBD /* BreakingBad */ = {
-			isa = PBXGroup;
-			children = (
-				5E0C4B052520C2B30050CDBD /* BBCharacter.swift */,
-			);
-			path = BreakingBad;
-			sourceTree = "<group>";
-		};
 		5E0C4B0F2520C7960050CDBD /* RMViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,7 +123,6 @@
 				5E3D9DEC251D238400F91F82 /* Extensions */,
 				5E1C8751251E25DA0026461E /* NavStack */,
 				5E6B66192533470A00F108AB /* Resources */,
-				5E6B661E2533480000F108AB /* Services */,
 				5E3D9DD9251D0EB200F91F82 /* ViewModels */,
 				5E3D9DDD251D125C00F91F82 /* Views */,
 			);
@@ -182,94 +135,6 @@
 				5E2B7F77251A3145008415AE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		5E391680251CEA8B0035A643 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				5EADB3A425335D910015F528 /* Services */,
-				5E391681251CEA8B0035A643 /* Encoding */,
-				5E39169B251CEB600035A643 /* Models */,
-				5E391688251CEA8B0035A643 /* EndPoints */,
-				5E39168A251CEA8B0035A643 /* ServiceModels */,
-			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
-		5E391681251CEA8B0035A643 /* Encoding */ = {
-			isa = PBXGroup;
-			children = (
-				5E391682251CEA8B0035A643 /* Parameters */,
-			);
-			path = Encoding;
-			sourceTree = "<group>";
-		};
-		5E391682251CEA8B0035A643 /* Parameters */ = {
-			isa = PBXGroup;
-			children = (
-				5E391683251CEA8B0035A643 /* ParameterEncoding.swift */,
-				5E391684251CEA8B0035A643 /* URLParameterEncoding.swift */,
-				5E391685251CEA8B0035A643 /* JSONParameterEncoder.swift */,
-			);
-			path = Parameters;
-			sourceTree = "<group>";
-		};
-		5E391688251CEA8B0035A643 /* EndPoints */ = {
-			isa = PBXGroup;
-			children = (
-				5E0C4B082520C51C0050CDBD /* BreakingBadEndPoint.swift */,
-				5E391689251CEA8B0035A643 /* RickMortyEndPoint.swift */,
-			);
-			path = EndPoints;
-			sourceTree = "<group>";
-		};
-		5E39168A251CEA8B0035A643 /* ServiceModels */ = {
-			isa = PBXGroup;
-			children = (
-				5E8C010F25335B81003BEB9C /* NetworkEnums.swift */,
-				5E39168B251CEA8B0035A643 /* HTTPTask.swift */,
-				5E39168C251CEA8B0035A643 /* HTTPMethod.swift */,
-				5E39168D251CEA8B0035A643 /* Router.swift */,
-				5E39168E251CEA8B0035A643 /* NetworkLogger.swift */,
-				5E39168F251CEA8B0035A643 /* EndPointType.swift */,
-			);
-			path = ServiceModels;
-			sourceTree = "<group>";
-		};
-		5E39169B251CEB600035A643 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				5E39169C251CEB600035A643 /* Responses */,
-				5E3916A5251CEB600035A643 /* Requests */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		5E39169C251CEB600035A643 /* Responses */ = {
-			isa = PBXGroup;
-			children = (
-				5E0C4B042520C20C0050CDBD /* BreakingBad */,
-				5E3916CD251CF3010035A643 /* RickMorty */,
-			);
-			path = Responses;
-			sourceTree = "<group>";
-		};
-		5E3916A5251CEB600035A643 /* Requests */ = {
-			isa = PBXGroup;
-			children = (
-				5EEE13D9251E5816004EDE1A /* BaseEncodable.swift */,
-			);
-			path = Requests;
-			sourceTree = "<group>";
-		};
-		5E3916CD251CF3010035A643 /* RickMorty */ = {
-			isa = PBXGroup;
-			children = (
-				5E3D9DD6251D0AFF00F91F82 /* RMCharacter.swift */,
-				5E3D9DE5251D21DA00F91F82 /* RMInfo.swift */,
-				5E3D9DE8251D222300F91F82 /* RMCharactersInfo.swift */,
-			);
-			path = RickMorty;
 			sourceTree = "<group>";
 		};
 		5E3D9DD9251D0EB200F91F82 /* ViewModels */ = {
@@ -317,25 +182,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		5E6B661E2533480000F108AB /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				5E6B661F2533481D00F108AB /* ServiceLocator.swift */,
-				5E391680251CEA8B0035A643 /* Networking */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		5EADB3A425335D910015F528 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				5E6B662325334A1200F108AB /* BaseNetworkService.swift */,
-				5E25168525335F5E002F89CE /* RickMortyApiService.swift */,
-				5E6B662725334F8400F108AB /* BreakingBadApiService.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		5EB76C782534CCFB000A1C13 /* Resolver */ = {
 			isa = PBXGroup;
 			children = (
@@ -372,6 +218,7 @@
 			);
 			name = ServiceLocatorApp;
 			packageProductDependencies = (
+				5E14585B253751D000B2A209 /* TVShowsLibrary */,
 			);
 			productName = ApiPagingApp;
 			productReference = 5E2B7F6D251A3144008415AE /* ServiceLocatorApp.app */;
@@ -401,6 +248,7 @@
 			);
 			mainGroup = 5E2B7F64251A3144008415AE;
 			packageReferences = (
+				5E14585A253751D000B2A209 /* XCRemoteSwiftPackageReference "TVShowsLibrary" */,
 			);
 			productRefGroup = 5E2B7F6E251A3144008415AE /* Products */;
 			projectDirPath = "";
@@ -429,41 +277,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EB76C7A2534CD08000A1C13 /* Inject.swift in Sources */,
-				5E6B66202533481D00F108AB /* ServiceLocator.swift in Sources */,
-				5E391692251CEA8B0035A643 /* JSONParameterEncoder.swift in Sources */,
 				5EB76C7E2534CD45000A1C13 /* Resolver.swift in Sources */,
-				5E3D9DE6251D21DA00F91F82 /* RMInfo.swift in Sources */,
 				5E3D9DDB251D0EC100F91F82 /* RMCharactersViewModel.swift in Sources */,
-				5E391697251CEA8B0035A643 /* Router.swift in Sources */,
-				5E25168625335F5E002F89CE /* RickMortyApiService.swift in Sources */,
 				5E0C4B142520CA540050CDBD /* RMCharactersListView.swift in Sources */,
-				5E391691251CEA8B0035A643 /* URLParameterEncoding.swift in Sources */,
-				5E6B662825334F8400F108AB /* BreakingBadApiService.swift in Sources */,
 				5EEE13DD251E5D6B004EDE1A /* RMCharacterImageView.swift in Sources */,
 				5E0C4B1E2520CEAE0050CDBD /* BBCharacterImageViewModel.swift in Sources */,
-				5E6B662425334A1200F108AB /* BaseNetworkService.swift in Sources */,
-				5E391690251CEA8B0035A643 /* ParameterEncoding.swift in Sources */,
-				5E391695251CEA8B0035A643 /* HTTPTask.swift in Sources */,
 				5E3D9DEE251D238400F91F82 /* Array.swift in Sources */,
-				5E391696251CEA8B0035A643 /* HTTPMethod.swift in Sources */,
 				5E2B7F73251A3144008415AE /* MainScreen.swift in Sources */,
-				5EEE13DA251E5816004EDE1A /* BaseEncodable.swift in Sources */,
-				5E0C4B062520C2B30050CDBD /* BBCharacter.swift in Sources */,
 				5E0C4B0D2520C78E0050CDBD /* BBCharactersViewModel.swift in Sources */,
-				5E3D9DE9251D222300F91F82 /* RMCharactersInfo.swift in Sources */,
 				5E0C4B182520CCB90050CDBD /* BBCharacterDetailsView.swift in Sources */,
-				5E391699251CEA8B0035A643 /* EndPointType.swift in Sources */,
 				5E0C4B1B2520CE7C0050CDBD /* BBCharacterImageView.swift in Sources */,
 				5EEE13D6251E565A004EDE1A /* RMCharacterDetailsView.swift in Sources */,
 				5E2B7F71251A3144008415AE /* ServiceLocatorApp.swift in Sources */,
 				5EEE13E2251E6475004EDE1A /* RMCharacterImageViewModel.swift in Sources */,
 				5E1C8753251E25DA0026461E /* NavControllerView.swift in Sources */,
-				5E3D9DD7251D0AFF00F91F82 /* RMCharacter.swift in Sources */,
 				5E3D9DDF251D129500F91F82 /* BBCharactersListView.swift in Sources */,
-				5E0C4B092520C51C0050CDBD /* BreakingBadEndPoint.swift in Sources */,
-				5E8C011025335B81003BEB9C /* NetworkEnums.swift in Sources */,
-				5E391694251CEA8B0035A643 /* RickMortyEndPoint.swift in Sources */,
-				5E391698251CEA8B0035A643 /* NetworkLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,6 +480,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5E14585A253751D000B2A209 /* XCRemoteSwiftPackageReference "TVShowsLibrary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/XFactorus/TVShowsLibrary";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5E14585B253751D000B2A209 /* TVShowsLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E14585A253751D000B2A209 /* XCRemoteSwiftPackageReference "TVShowsLibrary" */;
+			productName = TVShowsLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5E2B7F65251A3144008415AE /* Project object */;
 }

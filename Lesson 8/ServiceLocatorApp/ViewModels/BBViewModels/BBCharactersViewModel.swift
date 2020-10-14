@@ -1,6 +1,7 @@
 
 import Foundation
 import Combine
+import TVShowsLibrary
 
 final class BBCharactersViewModel: ObservableObject {
     
@@ -49,8 +50,7 @@ final class BBCharactersViewModel: ObservableObject {
     }
     
     func loadMockData() {
-        listDataSource = [BBCharacter(id: 1, name: "Walter White", birthday: "09-07-1958", occupation: nil, img: nil, status: "Presumed dead", nickname: "Heisenberg", appearance: nil, portrayed: nil, category: nil, betterCallSaulAppearance: nil),
-                          BBCharacter(id: 2, name: "Jesse Pinkman", birthday: "09-24-1984", occupation: nil, img: nil, status: "Alive", nickname: "Cap n' Cook", appearance: nil, portrayed: nil, category: nil, betterCallSaulAppearance: nil)]
+        self.listDataSource = [BBCharacter .getMockCharacter(), BBCharacter.getMockCharacter()]
     }
     
 }

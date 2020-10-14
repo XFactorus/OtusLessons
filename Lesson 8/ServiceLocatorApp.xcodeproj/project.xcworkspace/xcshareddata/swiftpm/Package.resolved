@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "TVShowsLibrary",
+        "repositoryURL": "https://github.com/XFactorus/TVShowsLibrary",
+        "state": {
+          "branch": "main",
+          "revision": "63cc2e5b6f490690bb21b409e16dc41316745c2f",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

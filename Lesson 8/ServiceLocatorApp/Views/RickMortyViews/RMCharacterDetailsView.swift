@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import TVShowsLibrary
 
 struct RMCharacterDetailsView: View {
     var character: RMCharacter
