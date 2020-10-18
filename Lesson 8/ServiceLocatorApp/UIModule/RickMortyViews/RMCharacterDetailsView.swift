@@ -10,7 +10,6 @@ import TVShowsLibrary
 
 struct RMCharacterDetailsView: View {
     var character: RMCharacter
-    
     var body: some View {
         
         VStack {

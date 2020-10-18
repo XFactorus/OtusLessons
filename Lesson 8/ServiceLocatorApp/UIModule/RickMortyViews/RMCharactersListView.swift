@@ -10,7 +10,7 @@ import TVShowsLibrary
 
 struct RMCharactersListView: View {
     
-    @EnvironmentObject var viewModel: RMCharactersViewModel
+    @ObservedObject var viewModel: RMCharactersViewModel
     @EnvironmentObject private var navModel: NavControllerViewModel
     
     var body: some View {
@@ -63,7 +63,6 @@ struct RMCharacterCell: View {
 
 struct RMCharactersListView_Previews: PreviewProvider {
     static var previews: some View {
-        RMCharactersListView()
-            .environmentObject(RMCharactersViewModel(isMock: true))
+        RMCharactersListView(viewModel: RMCharactersViewModel())
     }
 }

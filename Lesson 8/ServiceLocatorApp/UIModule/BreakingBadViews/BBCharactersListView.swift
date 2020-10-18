@@ -4,7 +4,7 @@ import TVShowsLibrary
 
 struct BBCharactersListView: View {
     
-    @EnvironmentObject var viewModel: BBCharactersViewModel
+    @ObservedObject var viewModel: BBCharactersViewModel
     @EnvironmentObject private var navModel: NavControllerViewModel
     
     var body: some View {
@@ -56,7 +56,6 @@ struct BBCharacterCell: View {
 
 struct BBCharactersListView_Previews: PreviewProvider {
     static var previews: some View {
-        BBCharactersListView()
-            .environmentObject(BBCharactersViewModel(isMock: true))
+        BBCharactersListView(viewModel: BBCharactersViewModel())
     }
 }

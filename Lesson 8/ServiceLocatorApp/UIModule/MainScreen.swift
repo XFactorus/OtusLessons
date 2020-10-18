@@ -7,14 +7,16 @@
 
 import SwiftUI
 
-struct MainScreen: View {
+public struct MainScreen: View {
     
-    @EnvironmentObject var rmViewModel: RMCharactersViewModel
-    @EnvironmentObject var bbViewModel: BBCharactersViewModel
+    @ObservedObject var rmListViewModel: RMCharactersViewModel = RMCharactersViewModel()
+    @ObservedObject var bbListViewModel: BBCharactersViewModel = BBCharactersViewModel()
+    
+    public init() {}
     
     @State private var selection: Int = 0
     
-    var body: some View {
+    public var body: some View {
         NavControllerView()  {
             VStack {
                 Picker("Options", selection: $selection) {
@@ -23,18 +25,18 @@ struct MainScreen: View {
                 }.pickerStyle(SegmentedPickerStyle())
                 
                 if selection == 0 {
-                    RMCharactersListView()
+                    RMCharactersListView(viewModel: rmListViewModel)
                         .onAppear() {
-                            self.rmViewModel.loadInitialList()
+                            self.rmListViewModel.loadInitialList()
                         }
                 } else {
-                    BBCharactersListView()
+                    BBCharactersListView(viewModel: bbListViewModel)
                         .onAppear() {
-                            self.bbViewModel.loadInitialList()
+                            self.bbListViewModel.loadInitialList()
                         }
                 }
             }.onAppear() {
-                self.rmViewModel.loadInitialList()
+                self.rmListViewModel.loadInitialList()
             }
         }
     }

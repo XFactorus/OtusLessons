@@ -6,14 +6,13 @@
 //
 
 import SwiftUI
+import UIModule
 
 @main
 struct ServiceLocatorApp: App {
     var body: some Scene {
         WindowGroup {
             MainScreen()
-                .environmentObject(RMCharactersViewModel())
-                .environmentObject(BBCharactersViewModel())
         }
     }
 }

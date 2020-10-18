@@ -7,26 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E0C4B0D2520C78E0050CDBD /* BBCharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0C4B0C2520C78E0050CDBD /* BBCharactersViewModel.swift */; };
-		5E0C4B142520CA540050CDBD /* RMCharactersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0C4B132520CA540050CDBD /* RMCharactersListView.swift */; };
-		5E0C4B182520CCB90050CDBD /* BBCharacterDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0C4B172520CCB90050CDBD /* BBCharacterDetailsView.swift */; };
-		5E0C4B1B2520CE7C0050CDBD /* BBCharacterImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0C4B1A2520CE7C0050CDBD /* BBCharacterImageView.swift */; };
-		5E0C4B1E2520CEAE0050CDBD /* BBCharacterImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0C4B1D2520CEAE0050CDBD /* BBCharacterImageViewModel.swift */; };
-		5E14585C253751D000B2A209 /* TVShowsLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 5E14585B253751D000B2A209 /* TVShowsLibrary */; };
-		5E1C8753251E25DA0026461E /* NavControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1C8752251E25DA0026461E /* NavControllerView.swift */; };
+		5E145894253CAC7B00B2A209 /* UIModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E145892253CAC7B00B2A209 /* UIModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E145897253CAC7B00B2A209 /* UIModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E145890253CAC7B00B2A209 /* UIModule.framework */; };
+		5E145898253CAC7B00B2A209 /* UIModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E145890253CAC7B00B2A209 /* UIModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5E14589F253CAC8400B2A209 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2B7F72251A3144008415AE /* MainScreen.swift */; };
+		5E1458A2253CAC8A00B2A209 /* RMCharactersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0C4B132520CA540050CDBD /* RMCharactersListView.swift */; };
+		5E1458A3253CAC8A00B2A209 /* RMCharacterDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEE13D5251E565A004EDE1A /* RMCharacterDetailsView.swift */; };
+		5E1458A4253CAC8A00B2A209 /* RMCharacterImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEE13DC251E5D6B004EDE1A /* RMCharacterImageView.swift */; };
+		5E1458A7253CAC8F00B2A209 /* BBCharacterImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0C4B1A2520CE7C0050CDBD /* BBCharacterImageView.swift */; };
+		5E1458A8253CAC8F00B2A209 /* BBCharactersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D9DDE251D129500F91F82 /* BBCharactersListView.swift */; };
+		5E1458A9253CAC8F00B2A209 /* BBCharacterDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0C4B172520CCB90050CDBD /* BBCharacterDetailsView.swift */; };
+		5E1458AC253CACB900B2A209 /* BBCharacterImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0C4B1D2520CEAE0050CDBD /* BBCharacterImageViewModel.swift */; };
+		5E1458AD253CACB900B2A209 /* BBCharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0C4B0C2520C78E0050CDBD /* BBCharactersViewModel.swift */; };
+		5E1458B0253CACBE00B2A209 /* RMCharacterImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEE13E1251E6475004EDE1A /* RMCharacterImageViewModel.swift */; };
+		5E1458B1253CACBE00B2A209 /* RMCharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D9DDA251D0EC100F91F82 /* RMCharactersViewModel.swift */; };
+		5E1458B4253CACD500B2A209 /* NavControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1C8752251E25DA0026461E /* NavControllerView.swift */; };
+		5E1458B7253CACFE00B2A209 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D9DED251D238400F91F82 /* Array.swift */; };
+		5E1458BC253CAD5500B2A209 /* TVShowsLibrary in Frameworks */ = {isa = PBXBuildFile; platformFilter = ios; productRef = 5E1458BB253CAD5500B2A209 /* TVShowsLibrary */; };
 		5E2B7F71251A3144008415AE /* ServiceLocatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2B7F70251A3144008415AE /* ServiceLocatorApp.swift */; };
-		5E2B7F73251A3144008415AE /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2B7F72251A3144008415AE /* MainScreen.swift */; };
 		5E2B7F75251A3145008415AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E2B7F74251A3145008415AE /* Assets.xcassets */; };
 		5E2B7F78251A3145008415AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E2B7F77251A3145008415AE /* Preview Assets.xcassets */; };
-		5E3D9DDB251D0EC100F91F82 /* RMCharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D9DDA251D0EC100F91F82 /* RMCharactersViewModel.swift */; };
-		5E3D9DDF251D129500F91F82 /* BBCharactersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D9DDE251D129500F91F82 /* BBCharactersListView.swift */; };
-		5E3D9DEE251D238400F91F82 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D9DED251D238400F91F82 /* Array.swift */; };
 		5EB76C7A2534CD08000A1C13 /* Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB76C792534CD08000A1C13 /* Inject.swift */; };
 		5EB76C7E2534CD45000A1C13 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB76C7D2534CD45000A1C13 /* Resolver.swift */; };
-		5EEE13D6251E565A004EDE1A /* RMCharacterDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEE13D5251E565A004EDE1A /* RMCharacterDetailsView.swift */; };
-		5EEE13DD251E5D6B004EDE1A /* RMCharacterImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEE13DC251E5D6B004EDE1A /* RMCharacterImageView.swift */; };
-		5EEE13E2251E6475004EDE1A /* RMCharacterImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEE13E1251E6475004EDE1A /* RMCharacterImageViewModel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E145895253CAC7B00B2A209 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E2B7F65251A3144008415AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E14588F253CAC7B00B2A209;
+			remoteInfo = UIModule;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5E14589C253CAC7B00B2A209 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5E145898253CAC7B00B2A209 /* UIModule.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5E0C4B0C2520C78E0050CDBD /* BBCharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCharactersViewModel.swift; sourceTree = "<group>"; };
@@ -34,6 +61,9 @@
 		5E0C4B172520CCB90050CDBD /* BBCharacterDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCharacterDetailsView.swift; sourceTree = "<group>"; };
 		5E0C4B1A2520CE7C0050CDBD /* BBCharacterImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCharacterImageView.swift; sourceTree = "<group>"; };
 		5E0C4B1D2520CEAE0050CDBD /* BBCharacterImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCharacterImageViewModel.swift; sourceTree = "<group>"; };
+		5E145890253CAC7B00B2A209 /* UIModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E145892253CAC7B00B2A209 /* UIModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIModule.h; sourceTree = "<group>"; };
+		5E145893253CAC7B00B2A209 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E1C8752251E25DA0026461E /* NavControllerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavControllerView.swift; sourceTree = "<group>"; };
 		5E2B7F6D251A3144008415AE /* ServiceLocatorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServiceLocatorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E2B7F70251A3144008415AE /* ServiceLocatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocatorApp.swift; sourceTree = "<group>"; };
@@ -52,11 +82,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5E14588D253CAC7B00B2A209 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E1458BC253CAD5500B2A209 /* TVShowsLibrary in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5E2B7F6A251A3144008415AE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E14585C253751D000B2A209 /* TVShowsLibrary in Frameworks */,
+				5E145897253CAC7B00B2A209 /* UIModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +129,28 @@
 			path = BreakingBadViews;
 			sourceTree = "<group>";
 		};
+		5E14588A253CAC3500B2A209 /* UIModule */ = {
+			isa = PBXGroup;
+			children = (
+				5E145892253CAC7B00B2A209 /* UIModule.h */,
+				5E145893253CAC7B00B2A209 /* Info.plist */,
+				5E3D9DEC251D238400F91F82 /* Extensions */,
+				5E1C8751251E25DA0026461E /* NavStack */,
+				5E2B7F72251A3144008415AE /* MainScreen.swift */,
+				5E3D9DD9251D0EB200F91F82 /* ViewModels */,
+				5EEE13D3251E55DA004EDE1A /* RickMortyViews */,
+				5E0C4B122520CA380050CDBD /* BreakingBadViews */,
+			);
+			path = UIModule;
+			sourceTree = "<group>";
+		};
+		5E1458BA253CAD5500B2A209 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5E1C8751251E25DA0026461E /* NavStack */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +164,7 @@
 			children = (
 				5E2B7F6F251A3144008415AE /* ServiceLocatorApp */,
 				5E2B7F6E251A3144008415AE /* Products */,
+				5E1458BA253CAD5500B2A209 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				5E2B7F6D251A3144008415AE /* ServiceLocatorApp.app */,
+				5E145890253CAC7B00B2A209 /* UIModule.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,12 +180,10 @@
 		5E2B7F6F251A3144008415AE /* ServiceLocatorApp */ = {
 			isa = PBXGroup;
 			children = (
+				5E14588A253CAC3500B2A209 /* UIModule */,
 				5EB76C782534CCFB000A1C13 /* Resolver */,
 				5E6B6618253346CB00F108AB /* Application */,
-				5E3D9DEC251D238400F91F82 /* Extensions */,
-				5E1C8751251E25DA0026461E /* NavStack */,
 				5E6B66192533470A00F108AB /* Resources */,
-				5E3D9DD9251D0EB200F91F82 /* ViewModels */,
 				5E3D9DDD251D125C00F91F82 /* Views */,
 			);
 			path = ServiceLocatorApp;
@@ -149,9 +209,6 @@
 		5E3D9DDD251D125C00F91F82 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5E2B7F72251A3144008415AE /* MainScreen.swift */,
-				5EEE13D3251E55DA004EDE1A /* RickMortyViews */,
-				5E0C4B122520CA380050CDBD /* BreakingBadViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,7 +260,39 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		5E14588B253CAC7B00B2A209 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E145894253CAC7B00B2A209 /* UIModule.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		5E14588F253CAC7B00B2A209 /* UIModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E145899253CAC7B00B2A209 /* Build configuration list for PBXNativeTarget "UIModule" */;
+			buildPhases = (
+				5E14588B253CAC7B00B2A209 /* Headers */,
+				5E14588C253CAC7B00B2A209 /* Sources */,
+				5E14588D253CAC7B00B2A209 /* Frameworks */,
+				5E14588E253CAC7B00B2A209 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIModule;
+			packageProductDependencies = (
+				5E1458BB253CAD5500B2A209 /* TVShowsLibrary */,
+			);
+			productName = UIModule;
+			productReference = 5E145890253CAC7B00B2A209 /* UIModule.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		5E2B7F6C251A3144008415AE /* ServiceLocatorApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E2B7F7C251A3145008415AE /* Build configuration list for PBXNativeTarget "ServiceLocatorApp" */;
@@ -211,14 +300,15 @@
 				5E2B7F69251A3144008415AE /* Sources */,
 				5E2B7F6A251A3144008415AE /* Frameworks */,
 				5E2B7F6B251A3144008415AE /* Resources */,
+				5E14589C253CAC7B00B2A209 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5E145896253CAC7B00B2A209 /* PBXTargetDependency */,
 			);
 			name = ServiceLocatorApp;
 			packageProductDependencies = (
-				5E14585B253751D000B2A209 /* TVShowsLibrary */,
 			);
 			productName = ApiPagingApp;
 			productReference = 5E2B7F6D251A3144008415AE /* ServiceLocatorApp.app */;
@@ -233,6 +323,9 @@
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					5E14588F253CAC7B00B2A209 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
 					5E2B7F6C251A3144008415AE = {
 						CreatedOnToolsVersion = 12.0;
 					};
@@ -255,11 +348,19 @@
 			projectRoot = "";
 			targets = (
 				5E2B7F6C251A3144008415AE /* ServiceLocatorApp */,
+				5E14588F253CAC7B00B2A209 /* UIModule */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5E14588E253CAC7B00B2A209 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5E2B7F6B251A3144008415AE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -272,32 +373,101 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5E14588C253CAC7B00B2A209 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E1458A8253CAC8F00B2A209 /* BBCharactersListView.swift in Sources */,
+				5E14589F253CAC8400B2A209 /* MainScreen.swift in Sources */,
+				5E1458AC253CACB900B2A209 /* BBCharacterImageViewModel.swift in Sources */,
+				5E1458AD253CACB900B2A209 /* BBCharactersViewModel.swift in Sources */,
+				5E1458A3253CAC8A00B2A209 /* RMCharacterDetailsView.swift in Sources */,
+				5E1458B0253CACBE00B2A209 /* RMCharacterImageViewModel.swift in Sources */,
+				5E1458B4253CACD500B2A209 /* NavControllerView.swift in Sources */,
+				5E1458A9253CAC8F00B2A209 /* BBCharacterDetailsView.swift in Sources */,
+				5E1458A2253CAC8A00B2A209 /* RMCharactersListView.swift in Sources */,
+				5E1458B7253CACFE00B2A209 /* Array.swift in Sources */,
+				5E1458A7253CAC8F00B2A209 /* BBCharacterImageView.swift in Sources */,
+				5E1458B1253CACBE00B2A209 /* RMCharactersViewModel.swift in Sources */,
+				5E1458A4253CAC8A00B2A209 /* RMCharacterImageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5E2B7F69251A3144008415AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5EB76C7A2534CD08000A1C13 /* Inject.swift in Sources */,
 				5EB76C7E2534CD45000A1C13 /* Resolver.swift in Sources */,
-				5E3D9DDB251D0EC100F91F82 /* RMCharactersViewModel.swift in Sources */,
-				5E0C4B142520CA540050CDBD /* RMCharactersListView.swift in Sources */,
-				5EEE13DD251E5D6B004EDE1A /* RMCharacterImageView.swift in Sources */,
-				5E0C4B1E2520CEAE0050CDBD /* BBCharacterImageViewModel.swift in Sources */,
-				5E3D9DEE251D238400F91F82 /* Array.swift in Sources */,
-				5E2B7F73251A3144008415AE /* MainScreen.swift in Sources */,
-				5E0C4B0D2520C78E0050CDBD /* BBCharactersViewModel.swift in Sources */,
-				5E0C4B182520CCB90050CDBD /* BBCharacterDetailsView.swift in Sources */,
-				5E0C4B1B2520CE7C0050CDBD /* BBCharacterImageView.swift in Sources */,
-				5EEE13D6251E565A004EDE1A /* RMCharacterDetailsView.swift in Sources */,
 				5E2B7F71251A3144008415AE /* ServiceLocatorApp.swift in Sources */,
-				5EEE13E2251E6475004EDE1A /* RMCharacterImageViewModel.swift in Sources */,
-				5E1C8753251E25DA0026461E /* NavControllerView.swift in Sources */,
-				5E3D9DDF251D129500F91F82 /* BBCharactersListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5E145896253CAC7B00B2A209 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E14588F253CAC7B00B2A209 /* UIModule */;
+			targetProxy = 5E145895253CAC7B00B2A209 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		5E14589A253CAC7B00B2A209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SDCQ43FS8W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/ServiceLocatorApp/UIModule/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = quantag.UIModule;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5E14589B253CAC7B00B2A209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SDCQ43FS8W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/ServiceLocatorApp/UIModule/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = quantag.UIModule;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		5E2B7F7A251A3145008415AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -417,6 +587,7 @@
 		5E2B7F7D251A3145008415AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +610,7 @@
 		5E2B7F7E251A3145008415AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -461,6 +633,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5E145899253CAC7B00B2A209 /* Build configuration list for PBXNativeTarget "UIModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E14589A253CAC7B00B2A209 /* Debug */,
+				5E14589B253CAC7B00B2A209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5E2B7F68251A3144008415AE /* Build configuration list for PBXProject "ServiceLocatorApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -493,7 +674,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5E14585B253751D000B2A209 /* TVShowsLibrary */ = {
+		5E1458BB253CAD5500B2A209 /* TVShowsLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5E14585A253751D000B2A209 /* XCRemoteSwiftPackageReference "TVShowsLibrary" */;
 			productName = TVShowsLibrary;
