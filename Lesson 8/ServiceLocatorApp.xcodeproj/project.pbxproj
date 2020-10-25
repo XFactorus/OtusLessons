@@ -27,6 +27,8 @@
 		5E2B7F71251A3144008415AE /* ServiceLocatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2B7F70251A3144008415AE /* ServiceLocatorApp.swift */; };
 		5E2B7F75251A3145008415AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E2B7F74251A3145008415AE /* Assets.xcassets */; };
 		5E2B7F78251A3145008415AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E2B7F77251A3145008415AE /* Preview Assets.xcassets */; };
+		5E51548B2545BF360078DCB1 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E51548A2545BF360078DCB1 /* AppConfig.swift */; };
+		5E51548E2545C3920078DCB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E51548D2545C3920078DCB1 /* AppDelegate.swift */; };
 		5EB76C7A2534CD08000A1C13 /* Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB76C792534CD08000A1C13 /* Inject.swift */; };
 		5EB76C7E2534CD45000A1C13 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB76C7D2534CD45000A1C13 /* Resolver.swift */; };
 /* End PBXBuildFile section */
@@ -74,6 +76,8 @@
 		5E3D9DDA251D0EC100F91F82 /* RMCharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharactersViewModel.swift; sourceTree = "<group>"; };
 		5E3D9DDE251D129500F91F82 /* BBCharactersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCharactersListView.swift; sourceTree = "<group>"; };
 		5E3D9DED251D238400F91F82 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		5E51548A2545BF360078DCB1 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		5E51548D2545C3920078DCB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EB76C792534CD08000A1C13 /* Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inject.swift; sourceTree = "<group>"; };
 		5EB76C7D2534CD45000A1C13 /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
 		5EEE13D5251E565A004EDE1A /* RMCharacterDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterDetailsView.swift; sourceTree = "<group>"; };
@@ -184,7 +188,6 @@
 				5EB76C782534CCFB000A1C13 /* Resolver */,
 				5E6B6618253346CB00F108AB /* Application */,
 				5E6B66192533470A00F108AB /* Resources */,
-				5E3D9DDD251D125C00F91F82 /* Views */,
 			);
 			path = ServiceLocatorApp;
 			sourceTree = "<group>";
@@ -206,13 +209,6 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		5E3D9DDD251D125C00F91F82 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		5E3D9DEC251D238400F91F82 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +222,8 @@
 			children = (
 				5E2B7F79251A3145008415AE /* Info.plist */,
 				5E2B7F70251A3144008415AE /* ServiceLocatorApp.swift */,
+				5E51548A2545BF360078DCB1 /* AppConfig.swift */,
+				5E51548D2545C3920078DCB1 /* AppDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -398,7 +396,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EB76C7A2534CD08000A1C13 /* Inject.swift in Sources */,
+				5E51548B2545BF360078DCB1 /* AppConfig.swift in Sources */,
 				5EB76C7E2534CD45000A1C13 /* Resolver.swift in Sources */,
+				5E51548E2545C3920078DCB1 /* AppDelegate.swift in Sources */,
 				5E2B7F71251A3144008415AE /* ServiceLocatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,22 +10,6 @@ import Foundation
 import SwiftUI
 import Combine
 
-// Pan Gesture
-/*
- .simultaneousGesture(DragGesture()
-     .onChanged { _ in }
-     .onEnded { drag in
-         if -drag.predictedEndTranslation.width > geometry.size.width / 2 {
-             pp("👆to Left", className: Self.self)
-         }
-         if drag.predictedEndTranslation.width > geometry.size.width / 2 {
-             pp("👆to Right", className: Self.self)
-             self.presentationMode.wrappedValue.dismiss()
-         }
-     }
- )
-*/
-
 extension AnyTransition {
     
     static var moveAndFade: AnyTransition {

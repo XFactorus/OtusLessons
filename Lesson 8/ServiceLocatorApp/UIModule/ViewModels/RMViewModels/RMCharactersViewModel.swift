@@ -16,6 +16,8 @@ final class RMCharactersViewModel: ObservableObject {
     @Published private(set) var isPageLoading = false
     @Published private(set) var page: Int = 1
     
+    private var rickMortyService: RickMortyApiService? = TVShowsLibraryServiceLocator.service()
+    
     private var initialInfoLoaded = false
     
     init(isMock: Bool = false) {
@@ -39,7 +41,7 @@ final class RMCharactersViewModel: ObservableObject {
   
         isPageLoading = true
                 
-        RickMortyApiService.service.loadRMCharacters(page) { (characters, errorText) in
+        rickMortyService?.loadRMCharacters(page) { (characters, errorText) in
             DispatchQueue.main.async {
                 self.isPageLoading = false
                 

@@ -10,6 +10,8 @@ final class BBCharactersViewModel: ObservableObject {
     @Published private(set) var isPageLoading = false
     @Published private(set) var offset: Int = 0
     
+    private var breakingBadService: BreakingBadApiService? = TVShowsLibraryServiceLocator.service()
+    
     private var initialInfoLoaded = false
     private let limit = 10
     
@@ -34,7 +36,7 @@ final class BBCharactersViewModel: ObservableObject {
   
         isPageLoading = true
                 
-        BreakingBadApiService.service.loadBBCharacters(limit: limit, offset: offset) { (characters, errorText) in
+        breakingBadService?.loadBBCharacters(limit: limit, offset: offset) { (characters, errorText) in
             DispatchQueue.main.async {
                 self.isPageLoading = false
 
